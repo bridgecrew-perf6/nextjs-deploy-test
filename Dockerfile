@@ -23,7 +23,7 @@ WORKDIR /home/node/app
 
 COPY --from=BUILD_IMAGE /usr/src/app/next.config.js /home/node/app/
 COPY --from=BUILD_IMAGE /usr/src/app/node_modules /home/node/app/node_modules
-COPY --from=BUILD_IMAGE /usr/src/app/.next /home/node/app/.nest
+COPY --from=BUILD_IMAGE /usr/src/app/.next /home/node/app/.next
 COPY --from=BUILD_IMAGE /usr/src/app/public /home/node/app/public
 
 EXPOSE 3000
